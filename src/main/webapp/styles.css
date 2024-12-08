@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+	background-image : url('https://th.bing.com/th/id/OIP.BKr_3Lj8g9xOhBDPhbVSPQHaEr?rs=1&pid=ImgDetMain')
+	background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: transparent; /* Removed background color */
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #6200ea;
+    color: white;
+    padding: 20px 10px;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Form Container */
+form {
+    max-width: 480px;
+    margin: 30px auto;
+    background-color: rgb(0, 0, 0);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Radio Button Labels */
+input[type="radio"] + label {
+    color: white;
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #6200ea;
+    box-shadow: 0 0 6px rgba(98, 0, 234, 0.5);
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Buttons */
+.button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(1px);
+    background-color: #3e8e41;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    header {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Additional Styling for Forms and Headings */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: #6200ea;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #4500b8;
+    text-shadow: 0 0 5px rgba(98, 0, 234, 0.6);
+}
+
+/* Box Shadows for Interactive Elements */
+.button, .form-control, input[type="radio"] {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover, .form-control:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth Transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
